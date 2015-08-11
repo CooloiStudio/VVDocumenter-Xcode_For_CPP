@@ -34,11 +34,11 @@
 }
 
 -(NSString *) paramSymbol {
-    return self.forSwift ? @":param:" : @"@param";
+    return self.forSwift ? @":param:" : @"\\param";
 }
 
 -(NSString *) returnSymbol {
-    return self.forSwift ? @":returns:" : @"@return";
+    return self.forSwift ? @":returns:" : @"\\return";
 }
 
 -(NSString *) startCommentWithDescriptionTag:(NSString *)tag {
@@ -65,22 +65,22 @@
             [authorCotent appendString:[formatter stringFromDate:[NSDate date]]];
         }
         
-        authorInfo = [NSString stringWithFormat:@"%@@author %@\n%@\n", self.prefixString, authorCotent, self.prefixString];
+        authorInfo = [NSString stringWithFormat:@"%@\\author %@\n%@\n", self.prefixString, authorCotent, self.prefixString];
     }
     
     if ([[VVDocumenterSetting defaultSetting] useHeaderDoc]) {
-        return [NSString stringWithFormat:@"%@/*!\n%@%@%@<#Description#>\n", self.indent, authorInfo, self.prefixString, tag];
+        return [NSString stringWithFormat:@"%@///!\n%@%@%@<#Description#>\n", self.indent, authorInfo, self.prefixString, tag];
     } else if ([[VVDocumenterSetting defaultSetting] prefixWithSlashes]) {
         return [NSString stringWithFormat:@"%@%@%@<#Description#>\n", self.prefixString, authorInfo, tag];
     } else {
-        return [NSString stringWithFormat:@"%@/**\n%@%@%@<#Description#>\n", self.indent, authorInfo, self.prefixString, tag];
+        return [NSString stringWithFormat:@"%@///\n%@%@%@<#Description#>\n", self.indent, authorInfo, self.prefixString, tag];
     }
 }
 
 -(NSString *) startComment
 {
     NSString *descriptionTag =
-    [[VVDocumenterSetting defaultSetting] briefDescription] && !self.forSwift ? @"@brief  " : @"";
+    [[VVDocumenterSetting defaultSetting] briefDescription] && !self.forSwift ? @"@brief  " : @"\\brief ";
     return [self startCommentWithDescriptionTag:descriptionTag];
 }
 
@@ -147,7 +147,7 @@
         if (project.projectVersion && project.projectVersion.length>0) {
             return [NSString stringWithFormat:@"%@%@@since <#%@#>\n", self.emptyLine, self.prefixString,project.projectVersion];
         }else{
-         return [NSString stringWithFormat:@"%@%@@since <#version number#>\n", self.emptyLine, self.prefixString];
+         return [NSString stringWithFormat:@"%@%@\\since <#version number#>\n", self.emptyLine, self.prefixString];
         }
     } else {
         return @"";
@@ -159,7 +159,7 @@
     if ([[VVDocumenterSetting defaultSetting] prefixWithSlashes]) {
         return @"";
     } else {
-        return [NSString stringWithFormat:@"%@ */",self.indent];
+        return [NSString stringWithFormat:@"%@///",self.indent];
     }
 }
 
@@ -218,7 +218,7 @@
 -(NSString *) prefixString
 {
     if ([[VVDocumenterSetting defaultSetting] prefixWithStar] && !self.forSwift) {
-        return [NSString stringWithFormat:@"%@ *%@", self.indent, self.space];
+        return [NSString stringWithFormat:@"%@///%@", self.indent, self.space];
     } else if ([[VVDocumenterSetting defaultSetting] prefixWithSlashes]) {
         return [NSString stringWithFormat:@"%@///%@", self.indent, self.space];
     } else {

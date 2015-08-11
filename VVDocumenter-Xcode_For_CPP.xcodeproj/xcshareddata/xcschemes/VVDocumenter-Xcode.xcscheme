@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D14380F2179551B900C829CE"
-               BuildableName = "VVDocumenter-Xcode.xcplugin"
-               BlueprintName = "VVDocumenter-Xcode"
-               ReferencedContainer = "container:VVDocumenter-Xcode.xcodeproj">
+               BuildableName = "VVDocumenter-Xcode_For_CPP.xcplugin"
+               BlueprintName = "VVDocumenter-Xcode_For_CPP"
+               ReferencedContainer = "container:VVDocumenter-Xcode_For_CPP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "D1C462D917999C2000EB7B23"
                BuildableName = "VVDocumenterTests.xctest"
                BlueprintName = "VVDocumenterTests"
-               ReferencedContainer = "container:VVDocumenter-Xcode.xcodeproj">
+               ReferencedContainer = "container:VVDocumenter-Xcode_For_CPP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "D1C462D917999C2000EB7B23"
                BuildableName = "VVDocumenterTests.xctest"
                BlueprintName = "VVDocumenterTests"
-               ReferencedContainer = "container:VVDocumenter-Xcode.xcodeproj">
+               ReferencedContainer = "container:VVDocumenter-Xcode_For_CPP.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D14380F2179551B900C829CE"
-            BuildableName = "VVDocumenter-Xcode.xcplugin"
-            BlueprintName = "VVDocumenter-Xcode"
-            ReferencedContainer = "container:VVDocumenter-Xcode.xcodeproj">
+            BuildableName = "VVDocumenter-Xcode_For_CPP.xcplugin"
+            BlueprintName = "VVDocumenter-Xcode_For_CPP"
+            ReferencedContainer = "container:VVDocumenter-Xcode_For_CPP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D14380F2179551B900C829CE"
-            BuildableName = "VVDocumenter-Xcode.xcplugin"
-            BlueprintName = "VVDocumenter-Xcode"
-            ReferencedContainer = "container:VVDocumenter-Xcode.xcodeproj">
+            BuildableName = "VVDocumenter-Xcode_For_CPP.xcplugin"
+            BlueprintName = "VVDocumenter-Xcode_For_CPP"
+            ReferencedContainer = "container:VVDocumenter-Xcode_For_CPP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D14380F2179551B900C829CE"
-            BuildableName = "VVDocumenter-Xcode.xcplugin"
-            BlueprintName = "VVDocumenter-Xcode"
-            ReferencedContainer = "container:VVDocumenter-Xcode.xcodeproj">
+            BuildableName = "VVDocumenter-Xcode_For_CPP.xcplugin"
+            BlueprintName = "VVDocumenter-Xcode_For_CPP"
+            ReferencedContainer = "container:VVDocumenter-Xcode_For_CPP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

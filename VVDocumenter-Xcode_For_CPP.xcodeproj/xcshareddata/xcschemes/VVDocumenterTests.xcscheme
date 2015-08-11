@@ -17,7 +17,7 @@
                BlueprintIdentifier = "D1C462D917999C2000EB7B23"
                BuildableName = "VVDocumenterTests.xctest"
                BlueprintName = "VVDocumenterTests"
-               ReferencedContainer = "container:VVDocumenter-Xcode.xcodeproj">
+               ReferencedContainer = "container:VVDocumenter-Xcode_For_CPP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "D1C462D917999C2000EB7B23"
                BuildableName = "VVDocumenterTests.xctest"
                BlueprintName = "VVDocumenterTests"
-               ReferencedContainer = "container:VVDocumenter-Xcode.xcodeproj">
+               ReferencedContainer = "container:VVDocumenter-Xcode_For_CPP.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "D1C462D917999C2000EB7B23"
             BuildableName = "VVDocumenterTests.xctest"
             BlueprintName = "VVDocumenterTests"
-            ReferencedContainer = "container:VVDocumenter-Xcode.xcodeproj">
+            ReferencedContainer = "container:VVDocumenter-Xcode_For_CPP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>

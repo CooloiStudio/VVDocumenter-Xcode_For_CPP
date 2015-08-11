@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D3531086-47D6-424B-A130-7C3D40241058</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VVDocumenter-Xcode_For_CPP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>96F9A3FFDBE542CA207EE15F359A87494F0DDE3B</key>
+		<string>github.com:CooloiStudio/VVDocumenter-Xcode_For_CPP.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VVDocumenter-Xcode_For_CPP.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>96F9A3FFDBE542CA207EE15F359A87494F0DDE3B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:CooloiStudio/VVDocumenter-Xcode_For_CPP.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>96F9A3FFDBE542CA207EE15F359A87494F0DDE3B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>96F9A3FFDBE542CA207EE15F359A87494F0DDE3B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VVDocumenter-Xcode_For_CPP</string>
+		</dict>
+	</array>
+</dict>
+</plist>
