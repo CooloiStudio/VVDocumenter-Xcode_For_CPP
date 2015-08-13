@@ -60,7 +60,7 @@
     if (editMenuItem) {
         [[editMenuItem submenu] addItem:[NSMenuItem separatorItem]];
         
-        NSMenuItem *newMenuItem = [[NSMenuItem alloc] initWithTitle:@"VVDocumenter" action:@selector(showSettingPanel:) keyEquivalent:@""];
+        NSMenuItem *newMenuItem = [[NSMenuItem alloc] initWithTitle:@"VVDocumenter for CPPVVDocumenter" action:@selector(showSettingPanel:) keyEquivalent:@""];
         
         [newMenuItem setTarget:self];
         [[editMenuItem submenu] addItem:newMenuItem];

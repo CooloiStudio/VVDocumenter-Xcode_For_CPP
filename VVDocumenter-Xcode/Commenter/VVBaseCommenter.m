@@ -73,7 +73,7 @@
     } else if ([[VVDocumenterSetting defaultSetting] prefixWithSlashes]) {
         return [NSString stringWithFormat:@"%@%@%@<#Description#>\n", self.prefixString, authorInfo, tag];
     } else {
-        return [NSString stringWithFormat:@"%@\n%@%@%@<#Description#>\n", self.indent, authorInfo, self.prefixString, tag];
+        return [NSString stringWithFormat:@"%@%@%@%@<#Description#>\n", self.indent, authorInfo, self.prefixString, tag];
 //        return [NSString stringWithFormat:@"%@///\n%@%@%@<#Description#>\n", self.indent, authorInfo, self.prefixString, tag];
     }
 }
@@ -224,7 +224,7 @@
     } else if ([[VVDocumenterSetting defaultSetting] prefixWithSlashes]) {
         return [NSString stringWithFormat:@"%@///%@", self.indent, self.space];
     } else {
-        return [NSString stringWithFormat:@"%@ ", self.indent];
+        return [NSString stringWithFormat:@"%@", self.indent];
     }
 }
 
