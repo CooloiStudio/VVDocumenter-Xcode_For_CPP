@@ -18,6 +18,7 @@
 @property (nonatomic, assign) BOOL forSwiftEnum;
 @end
 
+
 @implementation VVBaseCommenter
 -(instancetype) initWithIndentString:(NSString *)indent codeString:(NSString *)code
 {
@@ -73,8 +74,7 @@
     } else if ([[VVDocumenterSetting defaultSetting] prefixWithSlashes]) {
         return [NSString stringWithFormat:@"%@%@%@<#Description#>\n", self.prefixString, authorInfo, tag];
     } else {
-        return [NSString stringWithFormat:@"%@%@%@%@<#Description#>\n", self.indent, authorInfo, self.prefixString, tag];
-//        return [NSString stringWithFormat:@"%@///\n%@%@%@<#Description#>\n", self.indent, authorInfo, self.prefixString, tag];
+        return [NSString stringWithFormat:@"%@///\n%@%@%@<#Description#>\n", self.indent, authorInfo, self.prefixString, tag];
     }
 }
 
@@ -135,7 +135,7 @@
     if (!self.hasReturn) {
         return @"";
     } else {
-        return [NSString stringWithFormat:@"%@%@%@ <#return value description#>", self.emptyLine, self.prefixString, [self returnSymbol]];
+        return [NSString stringWithFormat:@"%@%@%@ <#return value description#>\n", self.emptyLine, self.prefixString, [self returnSymbol]];
     }
 }
 
@@ -160,8 +160,7 @@
     if ([[VVDocumenterSetting defaultSetting] prefixWithSlashes]) {
         return @"";
     } else {
-        return [NSString stringWithFormat:@"%@",self.indent];
-//        return [NSString stringWithFormat:@"%@///",self.indent];
+        return [NSString stringWithFormat:@"%@///",self.indent];
     }
 }
 
@@ -220,11 +219,11 @@
 -(NSString *) prefixString
 {
     if ([[VVDocumenterSetting defaultSetting] prefixWithStar] && !self.forSwift) {
-        return [NSString stringWithFormat:@"%@///%@", self.indent, self.space];
+        return [NSString stringWithFormat:@"%@///%@", self.indent, @" "];
     } else if ([[VVDocumenterSetting defaultSetting] prefixWithSlashes]) {
         return [NSString stringWithFormat:@"%@///%@", self.indent, self.space];
     } else {
-        return [NSString stringWithFormat:@"%@", self.indent];
+        return [NSString stringWithFormat:@"%@ ", self.indent];
     }
 }
 
